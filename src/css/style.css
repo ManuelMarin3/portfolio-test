@@ -104,13 +104,31 @@ body {
 }
 
 .navbar #logo img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 21;
   display: block;
-  width: 40px;
+  width: 100px;
 }
 
 .navbar .btn {
   margin-right: 1.5rem;
 }
+
+/* -- swap which logo is visible based on theme -- */
+#logo img.logo-dark {
+  display: none;
+}
+[data-theme="dark"] #logo img.logo-dark {
+  display: block;
+  width: 120px;
+}
+[data-theme="dark"] #logo img.logo-light {
+  display: none;
+}
+
 
 .fas.fa-arrow-right {
   margin-left: 0.5rem;
@@ -121,6 +139,17 @@ body {
 .hamburger {
   margin-bottom: 0.1rem;
   display: none;
+}
+
+/* Stick theme toggle to right */
+.theme-switch {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 21;
 }
 
 .bar {
