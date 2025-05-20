@@ -61,6 +61,7 @@
           <!-- Logo centered -->
           <h1 id="logo">
             <a href="./">
+              <a href="https://manuelmarin3.com">
        <!-- light‐mode logo -->
        <img class="logo-light" src="./assets/logo-light.png" alt="Logo for light mode" />
       <!-- dark‐mode logo -->
@@ -72,10 +73,10 @@
           <!-- Nav links -->
           <ul class="nav-menu">
             <li><a class="nav-link" href="#projects">PROJECT</a></li>
-            <li><a class="nav-link" href="#">SOCIALS</a></li>
+            <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
             <li><a class="nav-link" href="#">CONTACT</a></li>
             <li>
-              <a class="nav-link btn btn-primary" href="https://github.com/CommunityPro/portfolio-html">
+              <a class="nav-link btn btn-primary">
                 RESUME <i class="fas fa-arrow-right"></i>
               </a>
             </li>
@@ -129,7 +130,7 @@
 
     <main>
     <!-- About Me -->
-    <section id="projects" class="project-container container">
+    + <section id="about" class="project-container container">
       <div class="division"></div>
       <div class="content-text">
         <h2>About Me</h2>
@@ -146,35 +147,113 @@
         </p>
       </div>
 
-          <!-- About Me -->
-    <section id="projects" class="project-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>My Experience</h2>
-        <p> 
-        </p>
-      </div>
+<!-- My Skills -->
+<section id="experience" class="experience-container container">
+  <div class="division"></div>
+  <div class="content-text">
+    <h2>My Skills</h2>
+  </div>
+
+  <div class="experience-grid">
+    <!-- Row 1 -->
+    <div class="experience-item">
+      <img src="assets/Windows.png" alt="Windows">
+      <span>Windows</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/MAC.png" alt="macOS">
+      <span>macOS</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/Networking.jpg" alt="Networking">
+      <span>Networking</span>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="experience-item">
+      <img src="assets/AWS.svg" alt="AWS">
+      <span>AWS</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/SQL.png" alt="SQL">
+      <span>SQL</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/Angular.webp" alt="Angular">
+      <span>Angular</span>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="experience-item">
+      <img src="assets/HTML5_logo_and_wordmark.svg" alt="HTML">
+      <span>HTML</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/js.png" alt="JavaScript">
+      <span>JavaScript</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/CSS.svg" alt="CSS">
+      <span>CSS</span>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="experience-item">
+      <img src="assets/git.png" alt="GitHub">
+      <span>GitHub</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/java.jpg" alt="Java">
+      <span>Java</span>
+    </div>
+    <div class="experience-item">
+      <img src="assets/SLACK.jpeg" alt="Slack">
+      <span>Slack</span>
+    </div>
+  </div>
+</section>
+
 
     <!-- Projects -->
-    <section id="projects" class="project-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Projects</h2>
-        <p>Check out some of my projects</p>
-      </div>
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+  <div class="content-text">
+    <h2>Projects</h2>
+    <p>Check out some of my projects</p>
+  </div>
 
-      <article class="project">
-        <!-- Project 1 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>GOT Weather</h3>
-              <p>Angular, HTML, CSS, Node.js</p>
-            </div>
+  <div class="projects-grid">
+    <!-- GOT Weather card -->
+    <a href="https://gotweather.live"
+       class="project-card"
+       target="_blank"
+       title="GOT Weather">
+      <img src="assets/project-one.png" alt="GOT Weather">
+      <div class="project-overlay">
+        <h3>GOT Weather</h3>
+        <p>Angular, HTML, CSS, Node.js</p>
+      </div>
+    </a>
+
+    <!-- Manny’s Resume card -->
+    <a href="https://manuelmarin3.com"
+       class="project-card"
+       target="_blank"
+       title="Manny’s Resume">
+      <img src="assets/ResumeImg.png" alt="Manny's Resume">
+      <div class="project-overlay">
+        <h3>Manny’s Resume</h3>
+        <p>HTML, CSS, JavaScript, Github</p>
+      </div>
+    </a>
+  </div>
+</section>
+
 
             <div class="project-link">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a href="https://manuelmarin3.com" target="_blank">
+                <i class="fas fa-globe"></i>
+                </a>
             </div>
           </div>
         </div>
@@ -182,6 +261,10 @@
     <footer id="footer">
       <div class="container">
         <a href="mailto:manuelmarin3business@gmail.com">manuelmarin3business@gmail.com</a>
+            <!-- Phone -->
+    <a href="tel:+18184576173" class="phone-link">
+      (818) 457-6173
+    </a>
         <!-- Social links -->
         <div class="social">
           <a href="#" target="_blank"
@@ -191,7 +274,6 @@
           <a href="#" target="_blank"
             ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
           /></a>
-          <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
         </div>
 
       </div>

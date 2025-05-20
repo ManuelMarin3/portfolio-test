@@ -369,3 +369,96 @@ body {
     width: 80%;
   }
 }
+/* --------- My Experience grid --------- */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.experience-item img {
+  width: 200px;       /* pick a uniform size */
+  height: auto;
+  display: block;
+}
+
+.experience-item span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.experience-item span {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.experience-item:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Projects grid: two cards centered */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+/* Card container */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  max-width: 350px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card image */
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hover overlay */
+.project-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.project-overlay p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+
+
